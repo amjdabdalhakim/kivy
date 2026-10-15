@@ -137,3 +137,11 @@ class Button(ButtonBehavior, Label):
     :attr:`border` is a :class:`~kivy.properties.ListProperty` and defaults to
     (16, 16, 16, 16)
     '''
+
+    border_auto_scale = OptionProperty(
+        'both_lower',
+        options=[
+            'off', 'both', 'x_only', 'y_only', 'y_full_x_lower',
+            'x_full_y_lower', 'both_lower'
+        ]
+    )
